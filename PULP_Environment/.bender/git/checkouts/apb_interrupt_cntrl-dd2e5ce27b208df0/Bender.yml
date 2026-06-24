@@ -1,0 +1,12 @@
+package:
+  name: apb_interrupt_cntrl
+  authors:
+    - "Pasquale Davide Schiavone <pschiavo@iis.ee.ethz.ch>"
+    - "Jie Chen <jie.chen@greenwaves-technologies.com>"
+    - "Florent Rotenberg <florent.rotenberg@greenwaves-technologies.com>"
+
+dependencies:
+  common_cells: { git: "https://github.com/pulp-platform/common_cells.git", version: 1.13.1 }
+
+sources:
+  - apb_interrupt_cntrl.sv

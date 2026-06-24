@@ -1,0 +1,9 @@
+overrides:
+  hci: { path: "working_dir/hci" } # Temporary override by Bender using `bender clone` command
+  pulp_soc: { path: "working_dir/pulp_soc" } # Temporary override by Bender using `bender clone` command
+  pulp_cluster: { path: "working_dir/pulp_cluster" } # Temporary override by Bender using `bender clone` command
+  hier-icache: { path: "working_dir/hier-icache" } # Temporary override by Bender using `bender clone` command
+  cluster_peripherals: { path: "working_dir/cluster_peripherals" } # Temporary override by Bender using `bender clone` command
+  adv_dbg_if: { path: "working_dir/adv_dbg_if" } # Temporary override by Bender using `bender clone` command
+
+
