@@ -1,0 +1,48 @@
+package:
+  name: hwpe-EQUALIZER-engine
+  authors:
+    - "Mohamed Abdelhay <abdelhaymohamed21@gmail.com>"
+    - "Sama Zayed       <samazayed2003@gmail.com>"
+
+dependencies:
+  hwpe-stream: { git: "https://github.com/pulp-platform/hwpe-stream.git", version: 1.6 }
+  hci:         { git: "https://github.com/pulp-platform/hci.git", version: 1.0.6 }
+  hwpe-ctrl:   { git: "https://github.com/pulp-platform/hwpe-ctrl.git", version: 1.6 }
+
+
+sources:
+  - include_dirs:
+      - rtl
+    files:
+      # Source files grouped in levels. Files in level 0 have no dependencies on files in this
+      # package. Files in level 1 only depend on files in level 0, files in level 2 on files in
+      # levels 1 and 0, etc. Files within a level are ordered alphabetically.
+      # Level 0
+      - rtl/EQUALIZER_package.sv
+      - rtl/engine/d_ff_complex.sv
+      - rtl/engine/complex_adder.sv
+      - rtl/engine/complex_mult_comb.sv
+      - rtl/engine/smart_round.sv
+      - rtl/engine/div_complex_by_real.sv
+      - rtl/engine/div_pipelined.sv
+      - rtl/engine/sqrt_pipelined.sv
+      - rtl/engine/hermitian_pipe.sv
+      - rtl/engine/matched_filter_unrolled.sv
+      - rtl/engine/MF_Wrap.sv
+      - rtl/engine/hermitian_mf_chain_comb.sv
+      - rtl/engine/Unpacking_Packing_Phase_1_2.sv
+      - rtl/engine/phase1_fwd_sub.sv
+      - rtl/engine/phase2_back_sub.sv
+      - rtl/engine/linear_solver_pipelined.sv
+      - rtl/engine/equalizer.sv
+      # Level 1
+      - rtl/fifo_v3.sv
+      - rtl/EQUALIZER_FIFO.sv
+      - rtl/EQUALIZER_engine.sv
+      - rtl/EQUALIZER_fsm.sv
+      - rtl/EQUALIZER_streamer.sv
+      # Level 2
+      - rtl/EQUALIZER_ctrl.sv
+      # Level 3
+      - rtl/EQUALIZER_top.sv
+      - rtl/EQUALIZER_top_wrap.sv

@@ -1,0 +1,185 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# source /home/abdelhay21/GP/sim/tcl_files/config/run_and_exit.tcl
+# source /home/abdelhay21/GP/sim/tcl_files/run.tcl
+# vsim -c -quiet vopt_tb -L models_lib -L vip_lib -t ps "+nowarnTRAN" "+nowarnTSCALE" "+nowarnTFMPC" "+TB_PATH=/home/abdelhay21/GP/sim/../../fe/tb/" "+UVM_NO_RELNOTES" "+ENTRY_POINT=0x1c008080" -permit_unmatched_virtual_intf "+VSIM_PATH=/home/abdelhay21/GP/sim" -voptargs="+acc=mnprv -assertdebug -bitscalars -fsmdebug -linedebug" -gUSE_SDVT_SPI=0 -gUSE_SDVT_CPI=0 -gBAUDRATE=115200 -gENABLE_DEV_DPI=0 -gLOAD_L2=JTAG -gUSE_SDVT_I2S=0 
+# Start time: 10:02:36 on Jun 21,2026
+# ** Error: (vsim-191) Questa has encountered an unexpected internal error: ../../src/vsim/vsimfunc.c(1989). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vsim-191) Questa has encountered an unexpected internal error: ../../src/vsim/vsimfunc.c(1989). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vsim-191) Questa has encountered an unexpected internal error: ../../src/vsim/vsimfunc.c(1989). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vsim-191) Questa has encountered an unexpected internal error: ../../src/vsim/vsimfunc.c(1989). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[0]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[1]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[2]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[3]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[4]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[5]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[6]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3839) Variable '/tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine/out32', driven via a port connection, is multiply driven. See /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv(62).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pulp/i_dut/cluster_domain_i/cluster_i/hwpe_gen/hwpe_subsystem_i/FFT_gen[7]/i_fft/i_engine File: /home/abdelhay21/GP/rtl/my_ips/FFT_HWPE/rtl/FFT_engine.sv Line: 190
+# ** Warning: (vsim-3770) Failed to find user specified function 'jtag_tick' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Region: /SimJTAG_sv_unit File: /home/abdelhay21/GP/rtl/tb/SimJTAG.sv
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_soc/i_FLL_digital/TQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_soc/i_FLL_digital/JTQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_per/i_FLL_digital/TQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_per/i_FLL_digital/JTQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_cluster/i_FLL_digital/TQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/i_clk_rst_gen/i_fll_cluster/i_FLL_digital/JTQ has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-3040) Command line generic/parameter "USE_SDVT_I2S" not found in design.
+# ** Warning: (vsim-3040) Command line generic/parameter "USE_SDVT_SPI" not found in design.
+#  
+do ../wave.do
+run -all
+# [CORE] Core settings: PULP_SECURE =           1, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Process: /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/fc_subsystem_i/FC_CORE/lFC_CORE/RISCY_PMP/pmp_unit_i/<anonymous> File: /home/abdelhay21/GP/.bender/git/checkouts/cv32e40p-0a3884e05ea5a482/rtl/riscv_pmp.sv Line: 677
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [CORE] Core settings: PULP_SECURE =           0, N_PMP_ENTRIES =          16, N_PMP_CFG           4
+# [TB]       0ns - Entry point is set to 0x1c008080
+# [TB]       0ns - Asserting hard reset
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 1  Process: /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/fc_subsystem_i/FC_CORE/lFC_CORE/RISCY_PMP/pmp_unit_i/<anonymous> File: /home/abdelhay21/GP/.bender/git/checkouts/cv32e40p-0a3884e05ea5a482/rtl/riscv_pmp.sv Line: 677
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 2  Process: /tb_pulp/i_dut/soc_domain_i/pulp_soc_i/fc_subsystem_i/FC_CORE/lFC_CORE/RISCY_PMP/pmp_unit_i/<anonymous> File: /home/abdelhay21/GP/.bender/git/checkouts/cv32e40p-0a3884e05ea5a482/rtl/riscv_pmp.sv Line: 677
+# [TB]       1ns - Using FLL
+# [TB]       1ns - Not using CAM SDVT
+# Loading default stimuli
+# [JTAG] SoftReset Done(    701ns)
+# [JTAG] Bypass Test Passed (  33301ns)
+# [JTAG] Tap ID: 249511c3 (  43701ns)
+# [JTAG] Tap ID Test PASSED (  43701ns)
+# [test_mode_if]   50301ns - Init
+# [TB]   50301ns - Enabling clock out via jtag
+# [test_mode_if]   51801ns - Setting confreg to value 002.
+# [TB]   51801ns - jtag_conf_reg set to 002
+# [TB]   51801ns - Releasing hard reset
+# [TB]   53401ns - Init PULP TAP
+# [pulp_tap_if] WRITE32 burst @1c008080 for           4 bytes.
+# [TB]   67501ns - Write32 PULP TAP
+# [JTAG] R/W test of L2 succeeded
+# [TB]  177701ns - Halting the Core
+# [TB]  236501ns - Writing the boot address into dpc
+# [TB]  280601ns - Loading L2
+# [JTAG] Loading L2 with pulp tap jtag interface
+# [pulp_tap_if] WRITE32 burst @10000000 for           8 bytes.
+# [pulp_tap_if] WRITE32 burst @1c000000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c000400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c000800 for         240 bytes.
+# [pulp_tap_if] WRITE32 burst @1c008000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c008400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c008800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c008c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c009000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c009400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c009800 for         992 bytes.
+# [pulp_tap_if] WRITE32 burst @1c010000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c010400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c010800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c010c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c011000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c011400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c011800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c011c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c012000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c012400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c012800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c012c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c013000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c013400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c013800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c013c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c014000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c014400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c014800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c014c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c015000 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c015400 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c015800 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c015c00 for        1024 bytes.
+# [pulp_tap_if] WRITE32 burst @1c016000 for        1024 bytes.
+# [TB] 28701801ns - Resuming the CORE
+# [TB] 28760601ns retrying debug reg access
+# [TB] 28789901ns retrying debug reg access
+# [TB] 28819201ns retrying debug reg access
+# [TB] 28848501ns retrying debug reg access
+# [TB] 28877801ns retrying debug reg access
+# [TB] 28907101ns retrying debug reg access
+# [TB] 28936401ns retrying debug reg access
+# [TB] 28965701ns retrying debug reg access
+# [TB] 28995001ns retrying debug reg access
+# [TB] 29024301ns retrying debug reg access
+# [TB] 29053601ns retrying debug reg access
+# [TB] 29082901ns retrying debug reg access
+# [TB] 29112201ns retrying debug reg access
+# [TB] 29141501ns retrying debug reg access
+# [TB] 29170801ns retrying debug reg access
+# [TB] 29200101ns retrying debug reg access
+# [TB] 29229401ns retrying debug reg access
+# [TB] 29258701ns retrying debug reg access
+# [TB] 29288001ns retrying debug reg access
+# [TB] 29317301ns retrying debug reg access
+# [TB] 29346601ns retrying debug reg access
+# [TB] 29375901ns retrying debug reg access
+# [TB] 29405201ns retrying debug reg access
+# [TB] 29434501ns retrying debug reg access
+# [TB] 29463801ns retrying debug reg access
+# [TB] 30022501ns - Waiting for end of computation
+# [STDOUT-CL31_PE0] Entering main controller
+# [STDOUT-CL31_PE0] Got retval from SOC
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 0: Total errors = 0
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 1: Total errors = 0
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 2: Total errors = 0
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 3: Total errors = 0
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 4: Total errors = 0
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 5: Total errors = 0
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 6: Total errors = 0
+# [STDOUT-CL31_PE0] 
+# [STDOUT-CL31_PE0] EQUALIZER USER 7: Total errors = 0
+# [TB] 32280901ns - Received status core: 0x00000000
+# ** Note: $stop    : /home/abdelhay21/GP/rtl/tb/tb_pulp.sv(1008)
+#    Time: 32280901 ns  Iteration: 0  Instance: /tb_pulp
+# Break at /home/abdelhay21/GP/rtl/tb/tb_pulp.sv line 1008
+# End time: 10:13:13 on Jun 21,2026, Elapsed time: 0:10:37
+# Errors: 4, Warnings: 20
